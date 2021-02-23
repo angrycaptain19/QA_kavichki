@@ -14,9 +14,6 @@ def test_setup():
         global conn, c
         conn = sqlite3.connect('database.db')
         c = conn.cursor()
-
-
-def test_compare_tables():
         # Сбор заголовков таблицы
         headers_data = []
         headers = driver.find_elements(By.XPATH, '//table/thead/tr/th')
@@ -52,6 +49,7 @@ def test_compare_tables():
             c.execute("INSERT INTO buylist VALUES ('" + rows[x][0] + "', '" + rows[x][1] + "', '" + rows[x][2] + "')")
             conn.commit()
 
+def test_compare_tables():
         # Просмотр данных таблицы
         global db_rows
         c.execute("SELECT * FROM buylist")
