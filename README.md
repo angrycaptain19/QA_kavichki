@@ -1,7 +1,7 @@
 # QA_kavichki
 
 
-./drivers/chromedriver.xexe - Драйвер для Google Chrome v.88.0.4324.182. Если версия вашего браузера Google Chrome отличается, то следует скачать соответствующую версию на официальном сайте - https://chromedriver.chromium.org/downloads
+./drivers/chromedriver.exe - Драйвер для Google Chrome v.88.0.4324.182. Если версия вашего браузера Google Chrome отличается, то следует скачать соответствующую версию на официальном сайте - https://chromedriver.chromium.org/downloads
 
 ./kavichki.py - автотест для первого задания. Состоит из 5 тестов (не считая setup и teardown): 
 
@@ -25,9 +25,13 @@ teardown - закрытие драйвера и соединение с БД
 ./cmd.txt - текстовый файл с данными о том, как подключиться к БД после запуска sqlite3.exe.
 
 Для запуска понадобятся:
+
 -python 3.7+
+
 -pytest==6.0.2
+
 -requests==2.25.0
+
 -selenium==3.141.0
 
 Библиотеки json и sqlite3 являются стандартными библиотеками python, так что должны быть установленны вместе с python.
