@@ -1,0 +1,4 @@
+sqlite> .open database.db
+sqlite> select *
+   ...> from buylist
+   ...> ;
